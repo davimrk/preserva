@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f0e8;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 18px 10px 0;
+  background: linear-gradient(160deg, #1a4a1a 0%, #2d6a2d 60%, #3a8a3a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+header img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+  filter: brightness(0.85) saturate(1.2);
+}
+
+nav {
+  background: linear-gradient(90deg, #1a4a1a, #2d6a2d, #1a4a1a);
+  text-align: center;
+  padding: 12px;
+  border-bottom: 3px solid #5ab85a;
+}
+
+nav a {
+  color: #d4f5d4;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background:#5AB85A;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#5AB85A;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+h1,h2,h3,p{
+    text-align:center;
+}
+
+section h2{
+    font-size:42px;
+    color:#1A4A1A;
+    margin:70px 0 45px;
+    position:relative;
+}
+
+#imagens2{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+    margin-bottom:70px;
+}
+
+.card{
+    background:#fff9e9;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    transition:.45s;
+    animation:fadeUp .8s ease;
+}
+
+.card:hover{
+    transform:translateY(-15px) scale(1.03);
+    box-shadow:0 25px 45px rgba(0,0,0,.22);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.card:hover img{
+    transform:scale(1.1);
+}
+
+.card h3{
+    margin:20px;
+    color:#2D6A2D;
+    font-size:28px;
+}
+
+
+
+h2 {
+    color:#1A4A1A;
+}
+
+.card p{
+    margin:20px;
+    padding:18px;
+    border-radius:15px;
+    line-height:1.7;
+    background:linear-gradient(135deg,var(--card),var(--card),var(--card));
+    color:#3B2000;
+}
+
+
+.botao{
+    display:inline-block;
+    margin:20px;
+    padding:15px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    color:var(--branco);
+    background:#FFFBF0;
+    font-weight:bold;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.botao::before{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:180%;
+    background:rgba(255,255,255,.4);
+    top:-40%;
+    left:-70px;
+    transform:rotate(25deg);
+    transition:.6s;
+}
+
+.botao:hover::before{
+    left:120%;
+}
+
+.botao:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(26,74,26,.4);
+}
+
+#conheca-itajuba{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:60px 0;
+}
+
+.legenda{
+    color:#888888;
+}
+
+.sucesso{
+    background:#FFFBF0;
+    color:#FFFBF0;
+    border:2px solid #FFFBF0;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:80px;
+    background:#1A4A1A;
+    color:#FFFFFF;
+    text-align:center;
+    padding:45px;
+    font-size:18px;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fundo{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.8rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    nav{
+        border-radius:20px;
+    }
+
+    nav a{
+        display:block;
+        margin:12px 0;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    .card{
+        width:100%;
+    }
+}
