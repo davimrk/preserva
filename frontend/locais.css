@@ -583,3 +583,101 @@ border-bottom: 1px solid #ddd;
 .card-dica:last-child {
 border-bottom: none;
 }
+
+
+@media (max-width: 700px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav a{
+        display: block;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+
+    .banner{
+        height: 45vh;
+    }
+
+    .banner_info{
+        left: 5%;
+        right: 5%;
+        top: 50%;
+        font-size: 1.4rem;
+    }
+
+    .banner_info h2{
+        line-height: 1.2;
+    }
+
+    .banner_info hr{
+        width: 70%;
+    }
+
+
+    .titulo_trilhas{
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 10px;
+        font-size: 1.2rem;
+    }
+
+    .trilhas,
+    .locais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: 20px;
+    }
+
+    .trilha1,
+    .trilha2,
+    .trilha3,
+    .trilha4,
+    .local1,
+    .local2,
+    .local3,
+    .local4{
+        width: 100%;
+        max-width: 360px;
+        box-sizing: border-box;
+    }
+
+    .icones{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .tempo,
+    .distancia{
+        justify-content: center;
+    }
+
+    .tempo img,
+    .distancia img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .info_endereco{
+        font-size: 1rem;
+    }
+
+
+    footer{
+        font-size: .85rem;
+        padding: 15px;
+    }
+
+}

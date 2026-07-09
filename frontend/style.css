@@ -469,3 +469,145 @@ hr {
   color: #c0392b;
   border: 2px solid #c0392b;
 }
+
+
+@media (max-width: 768px){
+
+    h1{
+        font-size:1.7rem;
+        padding:15px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .himg{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+    }
+
+    nav a{
+        display:block;
+        font-size:16px;
+        padding:6px 0;
+    }
+
+    section{
+        padding:40px 20px;
+    }
+
+    #container{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .sobre{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .pq,
+    .ex{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .pq figure,
+    .ex figure{
+        width:100%;
+    }
+
+    .pq img,
+    .ex img{
+        width:100%;
+        height:auto;
+        border-radius:12px;
+    }
+
+    figcaption{
+        font-size:.8rem;
+    }
+
+    .texto{
+        width:100%;
+    }
+
+    .texto-p{
+        text-align:justify;
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .container-imagens{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .container-imagens img{
+        width:100%;
+        height:auto;
+        border-radius:12px;
+    }
+
+    .carteis{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .cartel{
+        width:100%;
+        max-width:350px;
+    }
+
+    .cards,
+    .cartoes,
+    .numeros{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card,
+    .cartao,
+    .numero{
+        width:100%;
+        max-width:350px;
+    }
+
+    .quiz-botoes{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .quiz-botoes button{
+        width:100%;
+    }
+
+    #lado {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        position: static;
+    }
+
+    footer{
+        padding:20px;
+        font-size:.9rem;
+    }
+
+}

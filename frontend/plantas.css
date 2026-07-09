@@ -248,9 +248,41 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
-    .site-header {
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    nav{
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav a{
+        display: block;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .banner{
+        height: 45vh;
+    }
+
+    .banner_info{
+        left: 5%;
+        right: 5%;
+        top: 50%;
+        font-size: 1.4rem;
+    }
+
+    .banner_info h2{
+        line-height: 1.2;
+    }
+
+    .banner_info hr{
+        width: 70%;
     }
 
     .banner {
